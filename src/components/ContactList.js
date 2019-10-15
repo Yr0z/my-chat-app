@@ -32,8 +32,9 @@ const contact = [
 const Contactlist = () => (
     <div>
         {contact.map(contactItem => ( 
-            <Contact avatar ={contactItem.avatar}
-            name={contactItem.name} onlinde={contactItem.online} />
+            <Contact avatar ={contactItem.avatar} name={contactItem.name} online={contactItem.online} />
         ))}
     </div>
 ); 
+
+export default ContactList
