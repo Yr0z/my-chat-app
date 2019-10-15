@@ -1,27 +1,17 @@
-import React from 'react';
-import Contact from './components/Contact';
+import React, { Component } from 'react';
+import './App.css';
+import ContactList from './components/ContactList';
 
 
 
-const App = () => {
-  return (
-    <div className="App">
-      <Contact 
-        avatar="https://randomuser.me/api/portraits/women/79.jpg"
-        name="Danielle Hudson"
-        status
-      />
-      <Contact 
-        avatar="https://randomuser.me/api/portraits/men/33.jpg"
-        name="Kent Brewer"
-      />
-      <Contact 
-        avatar="https://randomuser.me/api/portraits/men/95.jpg"
-        name="Same Knight"
-        status
-      />
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+<ContactList/>
+      </div>
+    );
+  }
 }
 
 export default App;
