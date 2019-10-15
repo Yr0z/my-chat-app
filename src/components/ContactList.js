@@ -29,7 +29,7 @@ const contact = [
     },
 ]
 
-const Contactlist = () => (
+const ContactList = () => (
     <div>
         {contact.map(contactItem => ( 
             <Contact avatar ={contactItem.avatar} name={contactItem.name} online={contactItem.online} />
