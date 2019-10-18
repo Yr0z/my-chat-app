@@ -18,7 +18,7 @@ class Contact extends React.Component {
       <div className='status'
       onClick={envent => {
           const newOnline = !this.state.online;
-          this.setState({ online: newOline }) }}>
+          this.setState({ online: newOnline }) }}>
       <div className="status-text">
       <div className={this.state.online ? "status-online" : "status-offline"}>
       </div>
